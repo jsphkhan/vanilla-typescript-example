@@ -33,4 +33,5 @@ webpack compile ts files
 
 Git repo:
 -----------
+https://github.com/jsphkhan/vanilla-typescript-example
 
