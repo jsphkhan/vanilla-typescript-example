@@ -1,0 +1,36 @@
+I have created a package.json file so that I can use npm command to run scripts
+eg. npm start
+
+Typescript was installed as global npm module: npm install -g typescript
+
+How to compile?
+------------
+tsc index.ts -> compile
+tsc - watch mode 
+watcher mode configured inside tsconfig.json
+
+Run index.html?
+---------------
+npm start
+localhost:3000
+Uses lite-server npm module. Has automatic file watcher. Serves index.html file
+
+
+Official Docs:
+https://www.typescriptlang.org/docs/handbook/functions.html
+
+
+Tutorials:
+https://www.youtube.com/watch?v=BwuLxPH8IDs
+https://www.youtube.com/watch?v=ahCwqrYpIuM
+
+
+Next?
+-----
+How can I use typescript wit react? - Check https://github.com/jsphkhan/react-typescript-example
+Normal JS project
+webpack compile ts files
+
+Git repo:
+-----------
+
