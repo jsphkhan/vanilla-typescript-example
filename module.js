@@ -1,4 +1,9 @@
-function multiply(n1, n2) {
+/**
+ * Module Utitlity file
+*/
+export function sum(n1, n2) {
     return n1 + n2;
 }
-export default multiply;
+export function multiply(n1, n2) {
+    return n1 * n2;
+}

@@ -1,71 +1,81 @@
-//import multiply from './module';
+//you can use ES6 imports because I am using Parcel
+//bundler to create final bundle
+import { sum, multiply } from './module';
 /**
  * Example to work with index.html
 */
-// const btn = document.querySelector('#btn');
-// const num1 = document.querySelector('#num1')! as HTMLInputElement;
-// const num2 = document.querySelector('#num2')! as HTMLInputElement;
-// const result = document.querySelector('#result');
-// //function to add 
-// function add(x:number, y:number):number {
-//     return x + y;
-// }
-// btn.addEventListener('click', () => {
-//     console.log('btn clicked!');
-//     result.innerHTML = add(+num1.value, +num2.value).toString();
-// }, false);
+const btn = document.querySelector('#btn');
+const num1 = document.querySelector('#num1');
+const num2 = document.querySelector('#num2');
+const result = document.querySelector('#result');
+btn.addEventListener('click', () => {
+    console.log('btn clicked!', multiply(3, 3));
+    result.innerHTML = sum(+num1.value, +num2.value).toString();
+}, false);
 /**
  * Types
 */
-let n;
-n = 23;
-var arr = [];
-arr.push(23);
-arr.push(1);
-console.log(arr);
-const person1 = {
-    name: 'Joseph',
-    email: 'kkjk@gmail.com',
-};
-//console.log(person1.nickname);
-function sum(x, y, z) {
-    return x + y;
-}
-console.log(sum(2.5, 2));
-let tupleArr;
-tupleArr = [21, 'hello'];
-// const ADMIN = 0;
-// const AUTHOR = 1;
-// const CONTRIBUTOR = 2;
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 5] = "ADMIN";
-    Role[Role["AUTHOR"] = 100] = "AUTHOR";
-    Role[Role["CONTRIBUTOR"] = 200] = "CONTRIBUTOR";
-})(Role || (Role = {}));
-console.log(Role.AUTHOR);
-const person2 = {
-    name: 'Ayaan',
-    email: 'jhkj@gml.com',
-    role: Role.ADMIN
-};
-if (person2.role === Role.ADMIN) {
-    console.log('He is a Admin');
-}
-let combine;
-combine = function (n1, n2) {
-    return n1 + n2;
-};
-console.log(combine(8, 3));
-class Employee {
-    constructor(name, id) {
-        this.name = name;
-        this.id = id;
-    }
-    myMethod() {
-        console.log('hello', this.name);
-    }
-}
-const e1 = new Employee('Joseph', 1234);
-//console.log('employee: ', e1.name);
-e1.myMethod();
+// let n: number;
+// n = 23;
+// var arr: number[] = [];
+// arr.push(23);
+// arr.push(12);
+// console.log(arr);
+// interface Person {
+//     name: string,
+//     email: string,
+//     [key: string]: any
+// }
+// const person1:Person = {
+//     name: 'Joseph',
+//     email: 'kkjk@gmail.com',
+// }
+// //console.log(person1.nickname);
+// function sum(x: number, y: number, z?: number):number {
+//     return x + y;
+// }
+// console.log(sum(2.5,2));
+// let tupleArr: [number, string];
+// tupleArr = [21, 'hello']
+// // const ADMIN = 0;
+// // const AUTHOR = 1;
+// // const CONTRIBUTOR = 2;
+// enum Role {
+//     ADMIN = 5,
+//     AUTHOR = 100,
+//     CONTRIBUTOR = 200
+// }
+// console.log(Role.AUTHOR);
+// const person2: Person = {
+//     name: 'Ayaan',
+//     email: 'jhkj@gml.com',
+//     role: Role.ADMIN
+// }
+// if(person2.role === Role.ADMIN) {
+//     console.log('He is a Admin');
+// }
+// let combine: (a: number, b: number) => number;
+// combine = function(n1, n2) {
+//     return n1 + n2;
+// }
+// console.log(combine(8,3));
+// //ES6 class example
+// interface EmployeeType {
+//     name: string;
+//     id: number;
+//     [key: string]: any;
+// }
+// class Employee {
+//     private readonly name:string;
+//     id: number;
+//     constructor(name: string, id: number) {
+//         this.name = name;
+//         this.id = id;
+//     }
+//     myMethod():void {
+//         console.log('hello', this.name);
+//     }
+// }
+// const e1 = new Employee('Joseph', 1234);
+// //console.log('employee: ', e1.name);
+// e1.myMethod()
