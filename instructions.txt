@@ -23,14 +23,15 @@ File watcher is enabled inside tsconfig.json
 2. npm run dev -> this will start parcel dev server
 which will automatically rebuild your app as you change files and supports hot module replacement for fast development.
 
-Open localhost:1234
+Open http://localhost:1234 (run by Parcel dev server)
 
 Run in production mode?
 -----------------------
-Build the project: npm run build
-This will bundle the index.js (output of typesceript) file into es5 using Parcel bundler.
+1. Build the project: npm run build
+This will bundle the index.js (output of typesceript) file inside index.html into ES5 using Parcel bundler.
+Outputs the artifacts inside ./dist folder by default.
 
-Start lite-server: npm start
+2. Start lite-server: npm start
 Open http://localhost:8000
 Uses lite-server npm module. Has automatic file watcher. Serves dist/index.html file
 Configurations mentioned inside bs-config.json file

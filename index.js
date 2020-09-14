@@ -1,6 +1,6 @@
 //you can use ES6 imports because I am using Parcel
 //bundler to create final bundle
-import { sum, multiply } from './module';
+import { sum, multiply, minus } from './module';
 /**
  * Example to work with index.html
 */
@@ -10,6 +10,7 @@ const num2 = document.querySelector('#num2');
 const result = document.querySelector('#result');
 btn.addEventListener('click', () => {
     console.log('btn clicked!', multiply(3, 3));
+    console.log('minus test: ', minus(10, 2));
     result.innerHTML = sum(+num1.value, +num2.value).toString();
 }, false);
 /**
